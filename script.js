@@ -79,41 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --------------------------------------
-    // 4. VISOR DE CAPTURAS (LIGHTBOX)
-    // --------------------------------------
-    const lightbox = document.getElementById('lightbox');
-    if (lightbox) {
-        const lbImg = lightbox.querySelector('img');
-        const lbCaption = lightbox.querySelector('p');
-        const lbClose = lightbox.querySelector('.lightbox-close');
-
-        document.querySelectorAll('.gallery button[data-full]').forEach(btn => {
-            btn.addEventListener('click', () => {
-                const img = btn.querySelector('img');
-                const caption = btn.parentElement.querySelector('figcaption');
-                lbImg.src = btn.getAttribute('data-full');
-                lbImg.alt = img ? img.alt : '';
-                lbCaption.textContent = caption ? caption.textContent : '';
-                lightbox.classList.add('is-open');
-            });
-        });
-
-        const closeLightbox = () => {
-            lightbox.classList.remove('is-open');
-            lbImg.src = '';
-        };
-
-        lbClose.addEventListener('click', closeLightbox);
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) closeLightbox();
-        });
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('is-open')) closeLightbox();
-        });
-    }
-
-    // --------------------------------------
-    // 5. ANIMACIÓN DE APARICIÓN (REVEAL)
+    // 4. ANIMACIÓN DE APARICIÓN (REVEAL)
     // --------------------------------------
     const revealEls = document.querySelectorAll('.reveal');
     if ('IntersectionObserver' in window) {
@@ -131,7 +97,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --------------------------------------
-    // 6. ANOMALÍA DIMENSIONAL (CANVAS PARTÍCULAS)
+    // 5. ANOMALÍA DIMENSIONAL (CANVAS PARTÍCULAS)
     // --------------------------------------
     const canvas = document.getElementById('anomaly-canvas');
     if (canvas) {
@@ -155,7 +121,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 this.size = Math.random() * 3 + 1;
                 this.speedX = (Math.random() - 0.5) * 0.7;
                 this.speedY = (Math.random() - 0.5) * 0.7;
-                this.color = Math.random() > 0.5 ? '#00d2ff' : '#9d4edd';
+                this.color = Math.random() > 0.5 ? '#248311' : '#5d9e28';
                 this.opacity = Math.random();
                 this.fadeSpeed = Math.random() * 0.02 + 0.005;
             }

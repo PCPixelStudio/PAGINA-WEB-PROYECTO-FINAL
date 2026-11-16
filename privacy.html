@@ -5,90 +5,119 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Política de Privacidad | PC Pixel Studio</title>
   <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-  <nav class="navbar">
-    <a href="index.html" class="logo-link">
-      <img src="LOGOTIP ESTUDIO.png" alt="PC Pixel Studio Logo" class="logo-img">
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="devlog.html">Devlog</a></li>
-      <li><a href="studio.html">El Estudio</a></li>
-      <li><a href="contact.html">Contacto</a></li>
-    </ul>
-  </nav>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar" aria-label="Navegación principal">
+      <a href="index.html" class="logo-link" aria-label="PC Pixel Studio, inicio">
+        <img src="estudio/LOGOTIP-ESTUDIO.png" alt="" class="logo-img" width="52" height="44">
+        <span class="logo-text">PC Pixel<span>Studio</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html#juego">El juego</a></li>
+        <li><a href="index.html#personajes">Personajes</a></li>
+        <li><a href="devlog.html">Devlog</a></li>
+        <li><a href="studio.html">Estudio</a></li>
+        <li><a href="contact.html">Contacto</a></li>
+        <li class="nav-cta"><a class="btn btn-primary btn-small" href="https://pabloabaad25.itch.io/entre-dos-mundos" target="_blank" rel="noopener noreferrer">Jugar ▶</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <main>
+  <main id="contenido" class="page">
+    <div class="card" style="max-width: 900px; margin: 0 auto; padding: 2.5rem;">
+      <div class="page-head" style="margin-bottom: 2rem;">
+        <span class="eyebrow">Protección de datos</span>
+        <h1>Política de Privacidad</h1>
+        <p class="last-update" style="color: var(--text-muted); font-size: 0.9rem;">Última actualización: Noviembre de 2026</p>
+      </div>
 
-    
-    <section class="legal-container">
-      <h1>Política de Privacidad</h1>
-      <p class="last-update">Última actualización: Noviembre de 2026</p>
+      <article class="legal-content" style="display: flex; flex-direction: column; gap: 1.5rem; color: var(--text-muted);">
+        <section>
+          <p><strong>PC Pixel Studio</strong> (conjuntamente, "el Estudio", "nosotros" o "nuestro") es un equipo de desarrollo independiente de videojuegos ubicado en Girona, España. Esta Política de Privacidad explica cómo tratamos y protegemos la información personal en relación con nuestra página web, juegos (incluyendo <em>Entre Dos Mundos</em>) y servicios asociados.</p>
+        </section>
 
-      <article class="legal-content">
-        <p><strong>PC Pixel Studio</strong> (conjuntamente, "el Estudio", "nosotros" o "nuestro") es un equipo de desarrollo independiente de videojuegos
-          ubicado en Girona, España. Esta Política de Privacidad explica cómo tratamos y protegemos la información personal en relación con nuestra página
-          web, juegos (incluyendo <em>Entre Dos Mons</em>) y servicios asociados.</p>
+        <section>
+          <h2 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.5rem;">1. Categorías de información recopilada</h2>
+          <p>Dependiendo de cómo interactúes con nuestros Servicios, podemos recopilar:</p>
+          <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+            <li><strong>Datos de contacto e identificadores:</strong> Nombre, dirección de correo electrónico, nombre de usuario (Itch.io / Steam) o ID de plataforma al contactarnos o inscribirte en listas de correo.</li>
+            <li><strong>Datos de uso y técnicos:</strong> Dirección IP, versión del navegador, sistema operativo y estadísticas anónimas de juego recopiladas mediante Unity Analytics para mejorar nuestras mecánicas y detectar fallos.</li>
+            <li><strong>Información proporcionada voluntariamente:</strong> Comentarios en devlogs, mensajes del formulario de contacto o feedback sobre demos/playtesting.</li>
+          </ul>
+        </section>
 
-        <h2>1. Categorías de información recopilada</h2>
-        <p>Dependiendo de cómo interactúes con nuestros Servicios, podemos recopilar:</p>
-        <ul>
-          <li><strong>Datos de contacto e identificadores:</strong> Nombre, dirección de correo electrónico, nombre de usuario (Itch.io / Steam) o ID de plataforma
-            al contactarnos o inscribirte en listas de correo.</li>
-          <li><strong>Datos de uso y técnicos:</strong> Dirección IP, versión del navegador, sistema operativo y estadísticas anónimas de juego recopiladas mediante
-            Unity Analytics para mejorar nuestras mecánicas y detectar fallos.</li>
-          <li><strong>Información proporcionada voluntariamente:</strong> Comentarios en devlogs, mensajes del formulario de contacto o feedback sobre demos/playtesting.</li>
-        </ul>
+        <section>
+          <h2 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.5rem;">2. Uso y bases jurídicas del tratamiento</h2>
+          <p>Tratamos la información personal bajo los siguientes fundamentos legales (RGPD):</p>
+          <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+            <li><strong>Interés legítimo:</strong> Responder a solicitudes, prestar asistencia técnica, corregir errores en <em>Entre Dos Mundos</em> y mejorar la estabilidad de nuestro software.</li>
+            <li><strong>Consentimiento:</strong> Para el envío de boletines de noticias o comunicaciones sobre avances del desarrollo a través del formulario de contacto o newsletter.</li>
+            <li><strong>Cumplimiento legal:</strong> Cumplir con obligaciones legales o responder a requerimientos normativos aplicables en España y la UE.</li>
+          </ul>
+        </section>
 
-        <h2>2. Uso y bases jurídicas del tratamiento</h2>
-        <p>Tratamos la información personal bajo los siguientes fundamentos legales (RGPD):</p>
-        <ul>
-          <li><strong>Interés legítimo:</strong> Responder a solicitudes, prestar asistencia técnica, corregir errores en <em>Entre Dos Mons</em> y mejorar la estabilidad
-            de nuestro software.</li>
-          <li><strong>Consentimiento:</strong> Para el envío de boletines de noticias o comunicaciones sobre avances del desarrollo a través del formulario de contacto o
-            newsletter.</li>
-          <li><strong>Cumplimiento legal:</strong> Cumplir con obligaciones legales o responder a requerimientos normativos aplicables en España y la UE.</li>
-        </ul>
+        <section>
+          <h2 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.5rem;">3. Tecnologías de seguimiento y Cookies</h2>
+          <p>Utilizamos cookies estrictamente necesarias para el correcto funcionamiento de nuestra web y herramientas de analítica anónima. No comercializamos con tus datos de navegación ni realizamos perfiles publicitarios con fines de venta a terceros.</p>
+        </section>
 
-        <h2>3. Tecnologías de seguimiento y Cookies</h2>
-        <p>Utilizamos cookies estrictamente necesarias para el correcto funcionamiento de nuestra web y herramientas de analítica anónima. No comercializamos con tus datos
-          de navegación ni realizamos perfiles publicitarios con fines de venta a terceros.</p>
+        <section>
+          <h2 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.5rem;">4. Transferencias y compartición de datos</h2>
+          <p>No vendemos tu información personal a terceros. Únicamente compartimos datos mínimos estrictamente necesarios con proveedores de servicios de confianza (como plataformas de distribución tipo Steam o Itch.io) y herramientas técnicas integradas en el motor Unity 6 para la gestión de analíticas y reportes de errores de juego.</p>
+        </section>
 
-        <h2>4. Transferencias y compartición de datos</h2>
-        <p>No vendemos tu información personal a terceros. Únicamente compartimos datos mínimos estrictamente necesarios con proveedores de servicios de confianza
-          (como plataformas de distribución tipo Steam o Itch.io) y herramientas técnicas integradas en el motor Unity 6 para la gestión de analíticas y reportes de errores
-          de juego.</p>
+        <section>
+          <h2 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.5rem;">5. Conservación de datos</h2>
+          <p>Conservaremos los datos personales solo durante el tiempo necesario para responder a tus consultas o prestarte los servicios solicitados, procediendo a su supresión o anonimización posterior conforme a la normativa vigente.</p>
+        </section>
 
-        <h2>5. Conservación de datos</h2>
-        <p>Conservaremos los datos personales solo durante el tiempo necesario para responder a tus consultas o prestarte los servicios solicitados, procediendo a su supresión
-          o anonimización posterior conforme a la normativa vigente.</p>
+        <section>
+          <h2 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.5rem;">6. Tus Derechos (RGPD / LOPDGDD)</h2>
+          <p>Tienes derecho a solicitar el <strong>acceso, rectificación, supresión, limitación del tratamiento o portabilidad</strong> de tus datos personales en cualquier momento. Para ejercer cualquiera de estos derechos, contáctanos indicando el asunto de tu solicitud.</p>
+        </section>
 
-        <h2>6. Tus Derechos (RGPD / LOPDGDD)</h2>
-        <p>Tienes derecho a solicitar el **acceso, rectificación, supresión, limitación del tratamiento o portabilidad** de tus datos personales en cualquier momento. Para
-          ejercer cualquiera de estos derechos, contáctanos indicando el asunto de tu solicitud.</p>
-
-        <h2>7. Contacto</h2>
-        <p>Para cualquier duda o ejercicio de derechos sobre tu privacidad, puedes ponerte en contacto con el equipo en:</p>
-        <p><strong>Email de privacidad:</strong> info@pcpixelstudio.com<br>
-        <strong>Ubicación:</strong> Sant Narcís, Girona (España)</p>
+        <section>
+          <h2 style="color: var(--text-main); font-size: 1.3rem; margin-bottom: 0.5rem;">7. Contacto</h2>
+          <p>Para cualquier duda o ejercicio de derechos sobre tu privacidad, puedes ponerte en contacto con el equipo en:</p>
+          <p style="margin-top: 0.5rem;"><strong>Email de privacidad:</strong> info@pcpixelstudio.com<br><strong>Ubicación:</strong> Sant Narcís, Girona (España)</p>
+        </section>
       </article>
-    </section>
+    </div>
   </main>
 
+  <!-- FOOTER -->
   <footer>
     <div class="footer-content">
-      <p>&copy; 2026-27 PC Pixel Studio. Todos los derechos reservados. — Girona, España | <a href="privacy.html">Privacidad</a> | <a href="legal.html">Aviso Legal</a></p>
-      <div class="footer-icons">
-        <a href="https://itch.io" target="_blank" title="Itch.io"><img src="iconos/icon-aviable-itchio.svg" alt="Itch.io"></a>
-        <a href="https://github.com" target="_blank" title="GitHub"><img src="iconos/icon-github.png" alt="GitHub"></a>
-        <a href="https://instagram.com/pcpixelstudio_oficial" target="_blank" title="Instagram"><img src="iconos/icon-instagram.png" alt="Instagram"></a>
-        <a href="https://store.steampowered.com" target="_blank" title="Steam"><img src="iconos/icon-steam.png" alt="Steam"></a>
-        <a href="https://unity.com" target="_blank" title="Unity 6"><img src="iconos/icon-unity.png" alt="Unity"></a>
-        <a href="https://code.visualstudio.com" target="_blank" title="VS Code"><img src="iconos/icon-vscode.png" alt="VS Code"></a>
-        <a href="https://visualstudio.microsoft.com" target="_blank" title="Visual Studio"><img src="iconos/icon-vstudio.png" alt="Visual Studio"></a>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="estudio/LOGOTIP-ESTUDIO.png" alt="PC Pixel Studio" width="66" height="56">
+          <p>Estudio indie de Girona. Hacemos juegos en pixel art con mucho cariño y algo de café.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Síguenos</h4>
+          <nav class="footer-icons" aria-label="Redes sociales">
+            <a href="https://pabloabaad25.itch.io/entre-dos-mundos" target="_blank" rel="noopener noreferrer" aria-label="Itch.io"><img src="iconos/icon-aviable-itchio.svg" alt=""></a>
+            <a href="https://www.instagram.com/pcpixelstudio_oficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="iconos/icon-instagram.png" alt=""></a>
+            <a href="https://github.com/CyrailJR11/Projecte-Intermodular-de-Desenvolupament-d-Aplicacions-Multiplataforma" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="iconos/icon-github.png" alt=""></a>
+          </nav>
+        </div>
+        <div class="footer-col">
+          <h4>Hecho con</h4>
+          <div class="footer-icons">
+            <a href="https://unity.com" target="_blank" rel="noopener noreferrer" aria-label="Unity"><img src="iconos/icon-unity.png" alt=""></a>
+            <a href="https://visualstudio.microsoft.com" target="_blank" rel="noopener noreferrer" aria-label="Visual Studio"><img src="iconos/icon-vstudio.png" alt=""></a>
+            <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" aria-label="VS Code"><img src="iconos/icon-vscode.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026-27 PC Pixel Studio · Girona, España</p>
+        <p><a href="privacy.html">Privacidad</a> · <a href="legal.html">Aviso legal</a> · <a href="contact.html">Contacto</a></p>
       </div>
     </div>
   </footer>

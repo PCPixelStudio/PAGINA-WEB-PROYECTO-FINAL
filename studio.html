@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Estudio | PC Pixel Studio</title>
-  <meta name="description" content="Conoce las instalaciones, valores y tecnología de PC Pixel Studio en Sant Narcís, Girona.">
+  <title>El Estudio · PC Pixel Studio</title>
+  <meta name="description" content="Conoce PC Pixel Studio, nuestro estudio indie en Girona, los espacios de desarrollo, equipo y valores detrás de Entre Dos Mundos.">
   <meta name="theme-color" content="#0b0d17">
   <link rel="icon" href="favicons/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -18,14 +18,13 @@
   <header>
     <nav class="navbar" aria-label="Navegación principal">
       <a href="index.html" class="logo-link" aria-label="PC Pixel Studio, inicio">
-        <img src="estudio/logo-estudio.png" alt="" class="logo-img" width="52" height="44">
+        <img src="estudio/LOGOTIP-ESTUDIO.png" alt="" class="logo-img" width="52" height="44">
         <span class="logo-text">PC Pixel<span>Studio</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html#juego">El juego</a></li>
         <li><a href="index.html#personajes">Personajes</a></li>
-        <li><a href="index.html#galeria">Galería</a></li>
         <li><a href="devlog.html">Devlog</a></li>
         <li><a href="studio.html" class="active" aria-current="page">Estudio</a></li>
         <li><a href="contact.html">Contacto</a></li>
@@ -35,158 +34,93 @@
   </header>
 
   <main id="contenido" class="page">
-    <!-- EL ESTUDIO -->
-    <section>
-      <div class="page-head">
-        <span class="eyebrow">Quiénes somos</span>
-        <h1>El Estudio</h1>
-        <p>Estamos en el barrio de Sant Narcís de Girona. Pasa y conócenos un poco más.</p>
-      </div>
 
-      <!-- MAPA INTERACTIVO GOOGLE MAPS -->
-      <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.2458999!2d2.805!3d41.979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDU4JzQ0LjQiTiAywrA0OCcxOC4wIkU!5e0!3m2!1ses!2ses!4v1650000000000!5m2!1ses!2ses" title="Ubicación de PC Pixel Studio en Sant Narcís, Girona" allowfullscreen="" loading="lazy"></iframe>
+    <!-- CABECERA DE LA PÁGINA -->
+    <div class="page-head reveal">
+      <span class="eyebrow">Sobre nosotros</span>
+      <h1>El estudio detrás del píxel</h1>
+      <p>Somos un estudio indie con base en Girona enfocado en crear experiencias entrañables, mecánicas cuidadas y mundos artesanales.</p>
+    </div>
+
+    <!-- VALORES DEL ESTUDIO -->
+    <section class="section" aria-labelledby="values-title" style="padding-top: 0;">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nuestra filosofía</span>
+        <h2 id="values-title">Valores que nos definen</h2>
+      </div>
+      <div class="grid">
+        <article class="card reveal">
+          <img src="estudio/pasionyvocacion.png" alt="Pasión y vocación" class="card-img-top" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 160px; object-fit: cover;">
+          <h3>Pasión y vocación</h3>
+          <p>Amamos los videojuegos clásicos y modernos por igual. Cada línea de código y cada tile nace del entusiasmo por contar buenas historias.</p>
+        </article>
+        <article class="card reveal">
+          <img src="estudio/rigoryprofesionalidad.png" alt="Rigor y profesionalidad" class="card-img-top" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 160px; object-fit: cover;">
+          <h3>Rigor técnico</h3>
+          <p>Estructuras sólidas, optimización y diseño modular en Unity y C# para que la jugabilidad sea fluida, justa y responsiva.</p>
+        </article>
+        <article class="card reveal">
+          <img src="estudio/transparenciaycomunidad.png" alt="Transparencia y comunidad" class="card-img-top" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 160px; object-fit: cover;">
+          <h3>Comunidad abierta</h3>
+          <p>Desarrollo transparente compartiendo devlogs, avances y betas con los jugadores para crecer gracias al feedback directo.</p>
+        </article>
+        <article class="card reveal">
+          <img src="estudio/identidadpropia.png" alt="Identidad propia" class="card-img-top" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 160px; object-fit: cover;">
+          <h3>Identidad visual</h3>
+          <p>Pixel art hecho a mano, atención al detalle estético y atmósferas envolventes con una fuerte personalidad propia.</p>
+        </article>
       </div>
     </section>
 
-    <!-- NUESTRAS INSTALACIONES -->
-    <section style="margin-top: 4rem;">
-      <h2 style="margin-bottom: 1rem;">Nuestras Instalaciones</h2>
-      <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
-        Estamos ubicados en el corazón del barrio de Sant Narcís, Girona. Creemos que compartir nuestra vocación en espacio real nos hace mejores y enriquece cada
-        videojuego que creamos juntos, porque el toque humano es totalmente irremplazable.
-      </p>
-      <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
-        Nuestro estudio se encuentra en un amplio local comercial de planta baja de 188 metros cuadrados, caracterizado por su gran luminosidad natural y una distribución
-        abierta, funcional y versátil. Contamos con doble acceso (por la Avenida Sant Narcís y la calle Castelló de la Plana), lo que nos aporta una visibilidad excelente
-        desde el exterior.
-      </p>
-      <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1.5rem;">
-        El espacio interior está diseñado específicamente para potenciar la creatividad y el desarrollo técnico a través de varias áreas especializadas:
-      </p>
-
-      <div class="grid" style="margin-bottom: 2rem;">
-        <article class="card">
-          <h3>Zona de Desarrollo</h3>
-          <p>Espacios amplios, cómodos y perfectamente equipados para el diseño, programación en Unity 6 y creación de assets.</p>
-        </article>
-        <article class="card">
-          <h3>Sala de Sonido y Multimedia</h3>
-          <p>Un entorno optimizado para el diseño sonoro y la atmósfera de nuestros mundos virtuales.</p>
-        </article>
-        <article class="card">
-          <h3>Sala de Reuniones</h3>
-          <p>Diseñada para la puesta en común de ideas, coordinación de proyectos y estrategia creativa.</p>
-        </article>
-        <article class="card">
-          <h3>Área de QA y Playtesting</h3>
-          <p>Espacio dedicado a las pruebas de juego, depuración de errores y optimización de mecánicas.</p>
-        </article>
-        <article class="card">
-          <h3>Almacenamiento y Servicios</h3>
-          <p>Zona posterior con almacén/archivo para equipos y dos baños totalmente equipados.</p>
-        </article>
+    <!-- INSTALACIONES / ESPACIOS DEL ESTUDIO -->
+    <section class="section section-alt" aria-labelledby="facilities-title" style="border-radius: 20px; margin: 3rem 0;">
+      <div class="section-head reveal">
+        <span class="eyebrow">Nuestro espacio de trabajo</span>
+        <h2 id="facilities-title">Instalaciones del estudio</h2>
+        <p>Un vistazo a los rincones donde diseñamos, programamos, componemos y testeamos cada nivel.</p>
       </div>
 
-      <p style="text-align: center; font-weight: 700; color: var(--primary); margin: 2rem 0;">
-        ¡Pasa a conocernos un poco más y descubre dónde cobra vida Entre Dos Mons!
-      </p>
-    </section>
-
-    <!-- CARRUSEL DE FOTOS -->
-    <section style="margin-top: 4rem;">
-      <h2 style="text-align: center; margin-bottom: 1rem;">Galería del Estudio</h2>
-      <div class="carousel-container">
-        <button class="carousel-btn carousel-prev" type="button" onclick="moveSlide(-1)" aria-label="Imagen anterior">&#10094;</button>
-        <div class="carousel-slides" id="carouselSlides">
-          <div class="carousel-slide">
-            <img src="estudio/imagenes-estudio/studio_core-dev-hub_interior.png" alt="Core Dev Hub Interior" loading="lazy">
-          </div>
-          <div class="carousel-slide">
-            <img src="estudio/imagenes-estudio/studio_exterior-escaparate.png" alt="Exterior Escaparate" loading="lazy">
-          </div>
-          <div class="carousel-slide">
-            <img src="estudio/imagenes-estudio/studio_media-sound-room_interior.png" alt="Media Sound Room Interior" loading="lazy">
-          </div>
-          <div class="carousel-slide">
-            <img src="estudio/imagenes-estudio/studio_meeting-room_interior.png" alt="Meeting Room Interior" loading="lazy">
-          </div>
-          <div class="carousel-slide">
-            <img src="estudio/imagenes-estudio/studio_qa-playtesting-hub_interior.png" alt="QA Playtesting Hub Interior" loading="lazy">
-          </div>
-        </div>
-        <button class="carousel-btn carousel-next" type="button" onclick="moveSlide(1)" aria-label="Siguiente imagen">&#10095;</button>
+      <div class="grid">
+        <article class="card reveal">
+          <img src="estudio/imagenes-estudio/studio_exterior-escaparate.png" alt="Escaparate y entrada del estudio" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 200px; object-fit: cover;">
+          <h3>Exterior y Escaparate</h3>
+          <p>La fachada y bienvenida de nuestro espacio creativo en el corazón de Girona.</p>
+        </article>
+        <article class="card reveal">
+          <img src="estudio/imagenes-estudio/studio_core-dev-hub_interior.png" alt="Core Dev Hub interior" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 200px; object-fit: cover;">
+          <h3>Core Dev Hub</h3>
+          <p>El núcleo principal de desarrollo, estaciones de programación en Unity y diseño de sistemas.</p>
+        </article>
+        <article class="card reveal">
+          <img src="estudio/imagenes-estudio/studio_media-sound-room_interior.png" alt="Media & Sound Room" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 200px; object-fit: cover;">
+          <h3>Media & Sound Room</h3>
+          <p>Espacio dedicado a la composición de bandas sonoras, audio inmersivo y producción de teasers.</p>
+        </article>
+        <article class="card reveal">
+          <img src="estudio/imagenes-estudio/studio_meeting-room_interior.png" alt="Meeting Room" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 200px; object-fit: cover;">
+          <h3>Meeting Room</h3>
+          <p>Zona de reuniones, planificación de sprints y diseño conceptual de puzles y mecánicas.</p>
+        </article>
+        <article class="card reveal">
+          <img src="estudio/imagenes-estudio/studio_qa-playtesting-hub_interior.png" alt="QA Playtesting Hub" style="border-radius: 10px; margin-bottom: 1rem; width: 100%; height: 200px; object-fit: cover;">
+          <h3>QA Playtesting Hub</h3>
+          <p>Estaciones de pruebas de juego para validar físicas, detección de bugs y equilibrio de dificultad.</p>
+        </article>
       </div>
     </section>
 
-    <!-- PRINCIPIOS Y VALORES (ACORDEÓN) -->
-    <section style="margin-top: 4rem;">
-      <h2 style="margin-bottom: 1rem;">Principios y Valores</h2>
-      <div class="accordion">
-        <div class="accordion-item">
-          <div class="accordion-header" onclick="toggleAccordion(this)">
-            <img src="estudio/pasionyvocacion.png" alt="">
-            <span>Pasión y Vocación Indie</span>
-          </div>
-          <div class="accordion-content">
-            <p>El amor por el desarrollo de videojuegos tradicionales y el pixel art hecho con dedicación, reflejado en cada detalle gráfico y mecánico de Entre Dos Mons.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header" onclick="toggleAccordion(this)">
-            <img src="estudio/rigoryprofesionalidad.png" alt="">
-            <span>Rigor Técnico y Profesionalidad</span>
-          </div>
-          <div class="accordion-content">
-            <p>El compromiso con la excelencia académica y técnica, utilizando herramientas de vanguardia (Unity 6, C#, sistemas optimizados y arquitectura limpia)
-              para construir un producto sólido y funcional.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header" onclick="toggleAccordion(this)">
-            <img src="estudio/identidadpropia.png" alt="">
-            <span>Identidad y Creatividad Propia</span>
-          </div>
-          <div class="accordion-content">
-            <p>Apostar por mecánicas originales, como la inversión gravitatoria y la dualidad de los protagonistas (Nil y Volt), huyendo de lo convencional para ofrecer
-              experiencias inmersivas.</p>
-          </div>
-        </div>
-
-        <div class="accordion-item">
-          <div class="accordion-header" onclick="toggleAccordion(this)">
-            <img src="estudio/transparenciaycomunidad.png" alt="">
-            <span>Transparencia y Comunidad</span>
-          </div>
-          <div class="accordion-content">
-            <p>Mostrar el proceso real de creación a través de los devlogs y redes sociales, compartiendo el esfuerzo y la evolución del estudio desde el corazón de Girona.</p>
-          </div>
-        </div>
+    <!-- UBICACIÓN -->
+    <section class="section" aria-labelledby="location-title">
+      <div class="section-head reveal">
+        <span class="eyebrow">Dónde estamos</span>
+        <h2 id="location-title">Girona, España</h2>
+        <p>Trabajamos desde el corazón de Girona, inspirándonos en sus rincones y su entorno.</p>
+      </div>
+      <div class="map-container reveal" style="border-radius: 16px; overflow: hidden; border: 1px solid var(--border); height: 400px;">
+        <iframe title="Ubicación de PC Pixel Studio en Girona" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.2!2d2.8214!3d41.9794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12bad6d5e0000001%3A0x0!2sGirona%2C%20Spain!5e0!3m2!1ses!2ses!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
 
-    <!-- TECNOLOGÍA -->
-    <section style="margin-top: 4rem;">
-      <h2>Tecnología</h2>
-      <div class="tech-section">
-        <div class="tech-text">
-          <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 1rem;">
-            Para nosotros, desarrollar videojuegos es un acto de artesanía y rigor técnico. Por eso combinamos el desarrollo a medida con herramientas de vanguardia
-            como Unity 6 y C#: para trabajar cada título con el cuidado, la libertad y la precisión que requiere una experiencia con verdadera personalidad.
-          </p>
-          <p style="color: var(--text-muted); line-height: 1.7;">
-            Contar con nuestra propia infraestructura —desde servidores locales y red optimizada hasta el control total de cada línea de código— nos permite gestionar
-            flujos de trabajo avanzados, blindar el rendimiento de proyectos como Entre Dos Mons y perseguir una idea creativa hasta sus últimas consecuencias para construir
-            mundos exactamente como imaginamos que deben sentirse.
-          </p>
-        </div>
-        <div class="tech-image">
-          <img src="img/Unity62d.png" alt="Unity 6 2D Development" loading="lazy">
-        </div>
-      </div>
-    </section>
   </main>
 
   <!-- FOOTER -->
@@ -194,23 +128,24 @@
     <div class="footer-content">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="estudio/logo-estudio.png" alt="PC Pixel Studio" width="66" height="56">
+          <img src="estudio/LOGOTIP-ESTUDIO.png" alt="PC Pixel Studio" width="66" height="56">
           <p>Estudio indie de Girona. Hacemos juegos en pixel art con mucho cariño y algo de café.</p>
         </div>
         <div class="footer-col">
           <h4>Síguenos</h4>
           <nav class="footer-icons" aria-label="Redes sociales">
-            <a href="https://pabloabaad25.itch.io/entre-dos-mundos" target="_blank" rel="noopener noreferrer" aria-label="Entre Dos Mons en itch.io"><img src="iconos/icon-aviable-itchio.svg" alt=""></a>
-            <a href="https://www.instagram.com/pcpixelstudio_oficial/" target="_blank" rel="noopener noreferrer" aria-label="PC Pixel Studio en Instagram"><img src="iconos/icon-instagram.png" alt=""></a>
-            <a href="https://github.com/CyrailJR11/Projecte-Intermodular-de-Desenvolupament-d-Aplicacions-Multiplataforma" target="_blank" rel="noopener noreferrer" aria-label="Código del juego en GitHub"><img src="iconos/icon-github.png" alt=""></a>
+            <a href="https://pabloabaad25.itch.io/entre-dos-mundos" target="_blank" rel="noopener noreferrer" aria-label="Itch.io"><img src="iconos/icon-aviable-itchio.svg" alt=""></a>
+            <a href="https://www.instagram.com/pcpixelstudio_oficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="iconos/icon-instagram.png" alt=""></a>
+            <a href="https://github.com/CyrailJR11/Projecte-Intermodular-de-Desenvolupament-d-Aplicacions-Multiplataforma" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="iconos/icon-github.png" alt=""></a>
+            <a href="https://store.steampowered.com" target="_blank" rel="noopener noreferrer" aria-label="Steam"><img src="iconos/icon-steam.png" alt=""></a>
           </nav>
         </div>
         <div class="footer-col">
           <h4>Hecho con</h4>
           <div class="footer-icons">
-            <a href="https://unity.com" target="_blank" rel="noopener noreferrer" aria-label="Unity 6"><img src="iconos/icon-unity.png" alt=""></a>
+            <a href="https://unity.com" target="_blank" rel="noopener noreferrer" aria-label="Unity"><img src="iconos/icon-unity.png" alt=""></a>
             <a href="https://visualstudio.microsoft.com" target="_blank" rel="noopener noreferrer" aria-label="Visual Studio"><img src="iconos/icon-vstudio.png" alt=""></a>
-            <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" aria-label="Visual Studio Code"><img src="iconos/icon-vscode.png" alt=""></a>
+            <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" aria-label="VS Code"><img src="iconos/icon-vscode.png" alt=""></a>
           </div>
         </div>
       </div>
@@ -222,32 +157,5 @@
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    let currentSlide = 0;
-    const slides = document.getElementById('carouselSlides');
-    const totalSlides = slides.children.length;
-
-    function moveSlide(direction) {
-      currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
-      slides.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
-
-    setInterval(() => {
-      moveSlide(1);
-    }, 5000);
-
-    function toggleAccordion(header) {
-      const item = header.parentElement;
-      const isActive = item.classList.contains('active');
-
-      document.querySelectorAll('.accordion-item').forEach(accItem => {
-        accItem.classList.remove('active');
-      });
-
-      if (!isActive) {
-        item.classList.add('active');
-      }
-    }
-  </script>
 </body>
 </html>

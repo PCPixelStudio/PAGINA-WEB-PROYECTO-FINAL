@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Devlog · Entre Dos Mons | PC Pixel Studio</title>
-  <meta name="description" content="Diario de desarrollo de Entre Dos Mons: creación del primer capítulo, mapas de niveles, mecánicas y arte.">
+  <title>Devlog · Entre Dos Mundos | PC Pixel Studio</title>
+  <meta name="description" content="Diario de desarrollo de Entre Dos Mundos: creación del primer capítulo, mapas de niveles, mecánicas y arte.">
   <meta name="theme-color" content="#0b0d17">
   <link rel="icon" href="favicons/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
@@ -18,14 +18,13 @@
   <header>
     <nav class="navbar" aria-label="Navegación principal">
       <a href="index.html" class="logo-link" aria-label="PC Pixel Studio, inicio">
-        <img src="estudio/logo-estudio.png" alt="" class="logo-img" width="52" height="44">
+        <img src="estudio/LOGOTIP-ESTUDIO.png" alt="" class="logo-img" width="52" height="44">
         <span class="logo-text">PC Pixel<span>Studio</span></span>
       </a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menú">☰</button>
       <ul class="nav-links" id="nav-links">
         <li><a href="index.html#juego">El juego</a></li>
         <li><a href="index.html#personajes">Personajes</a></li>
-        <li><a href="index.html#galeria">Galería</a></li>
         <li><a href="devlog.html" class="active" aria-current="page">Devlog</a></li>
         <li><a href="studio.html">Estudio</a></li>
         <li><a href="contact.html">Contacto</a></li>
@@ -38,36 +37,36 @@
     <div class="page-head">
       <span class="eyebrow">Diario de desarrollo</span>
       <h1>Devlog</h1>
-      <p>Así avanza <em>Entre Dos Mons</em>. Contamos lo que construimos cada semana, con capturas reales del proyecto en Unity 6.</p>
+      <p>Así avanza <em>Entre Dos Mundos</em>. Contamos lo que construimos cada semana, con capturas reales del proyecto en Unity 6.</p>
     </div>
 
-    <div class="devlog-list">
+    <div class="devlog-list" style="display: flex; flex-direction: column; gap: 2rem;">
       <!-- ENTRADA #05: 16 NOVIEMBRE 2026 -->
       <article class="card devlog-entry">
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
-          <span class="tag">Entrada #05 · Primer Capítulo</span>
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+          <span class="badge badge-gold">Entrada #05 · Primer Capítulo</span>
           <time datetime="2026-11-16" style="color: var(--text-muted); font-size: 0.9rem; font-weight: 700;">16 de noviembre de 2026</time>
         </div>
         <div>
-          <h3>Del Prólogo al Capítulo 1: diseño completo de los dos primeros mapas</h3>
-          <p style="margin-bottom: 0.8rem;">
-            Esta semana hemos cerrado la estructura completa del <strong>Prólogo (Nivel 0)</strong> y del <strong>Primer Capítulo (Nivel 1)</strong>. Nuestro objetivo al diseñar el Capítulo 1 era dar un salto en verticalidad y exigir que el jugador combine de verdad el cambio entre <strong>Nil</strong> (en la superficie del bosque) y <strong>Volt</strong> (en las galerías subterráneas).
+          <h3 style="margin-bottom: 0.8rem; color: var(--primary);">Del Prólogo al Capítulo 1: diseño completo de los dos primeros mapas</h3>
+          <p style="margin-bottom: 0.8rem; color: var(--text-muted);">
+            Esta semana hemos cerrado la estructura completa del <strong>Prólogo (Nivel 0)</strong> y del <strong>Primer Capítulo (Nivel 1)</strong>[cite: 1]. Nuestro objetivo al diseñar el Capítulo 1 era dar un salto en verticalidad y exigir que el jugador combine de verdad el cambio entre <strong>Nil</strong> (en la superficie del bosque) y <strong>Volt</strong> (en las galerías subterráneas)[cite: 1].
           </p>
-          <p style="margin-bottom: 1.2rem;">
-            Empezamos bocetando la progresión de obstáculos sobre cuadrícula para medir exactamente los saltos, la distancia de las cuerdas y los puntos donde Volt necesita invertir la gravedad con sus botas magnéticas o recargar la batería de su linterna antes de quedar a oscuras.
+          <p style="margin-bottom: 1.2rem; color: var(--text-muted);">
+            Empezamos bocetando la progresión de obstáculos sobre cuadrícula para medir exactamente los saltos, la distancia de las cuerdas y los puntos donde Volt necesita invertir la gravedad con sus botas magnéticas o recargar la batería de su linterna antes de quedar a oscuras[cite: 1].
           </p>
 
-          <div class="grid" style="margin-top: 1rem;">
+          <div class="grid" style="margin-top: 1.5rem;">
             <figure>
-              <img src="MAPA_NIVEL0.png" alt="Diseño completo del mapa del Prólogo (Nivel 0) de Entre Dos Mons" loading="lazy">
+              <img src="MAPA_NIVEL0.png" alt="Diseño completo del mapa del Prólogo (Nivel 0)" loading="lazy" style="border-radius: 10px; border: 1px solid var(--border);">
               <figcaption style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; text-align: center;">
-                <strong>Nivel 0 (Prólogo):</strong> Introducción a las mecánicas básicas y primer contacto entre ambos mundos.
+                <strong>Nivel 0 (Prólogo):</strong> Introducción a las mecánicas básicas[cite: 1].
               </figcaption>
             </figure>
             <figure>
-              <img src="MAPA_NIVEL1.png" alt="Diseño completo del mapa del Capítulo 1 (Nivel 1) de Entre Dos Mons" loading="lazy">
+              <img src="MAPA_NIVEL1.png" alt="Diseño completo del mapa del Capítulo 1 (Nivel 1)" loading="lazy" style="border-radius: 10px; border: 1px solid var(--border);">
               <figcaption style="color: var(--text-muted); font-size: 0.9rem; margin-top: 0.5rem; text-align: center;">
-                <strong>Nivel 1 (Capítulo 1):</strong> Puzles cooperativos, zonas de gravedad invertida y gestión de linterna.
+                <strong>Nivel 1 (Capítulo 1):</strong> Puzles cooperativos y gravedad invertida[cite: 1].
               </figcaption>
             </figure>
           </div>
@@ -75,38 +74,27 @@
       </article>
 
       <article class="card devlog-entry">
-        <span class="tag">Entrada #04</span>
-        <div>
-          <h3>Mecánicas jugables: gravedad, cuerdas, agua y linterna</h3>
-          <p>Volt ya camina por el techo con sus botas magnéticas y su linterna gasta batería. Nil se cuelga de cuerdas, se balancea en péndulos y puede caer al agua. Añadimos vidas, checkpoints, HUD y efectos de sonido.</p>
-          <img src="img/galeria/mecanicas.png" alt="Mapa del prólogo con las mecánicas marcadas" loading="lazy">
-        </div>
+        <span class="badge" style="margin-bottom: 1rem;">Entrada #04</span>
+        <h3 style="margin-bottom: 0.8rem; color: var(--primary);">Mecánicas jugables: gravedad, cuerdas, agua y linterna</h3>
+        <p style="color: var(--text-muted);">Volt ya camina por el techo con sus botas magnéticas y su linterna gasta batería. Nil se cuelga de cuerdas, se balancea en péndulos y puede caer al agua. Añadimos vidas, checkpoints, HUD y efectos de sonido[cite: 1].</p>
       </article>
 
       <article class="card devlog-entry">
-        <span class="tag">Entrada #03</span>
-        <div>
-          <h3>Niveles generados por código</h3>
-          <p>Cada nivel se describe como un mapa de texto y Unity lo construye solo: suelo, plataformas, puntos de control, salida y diálogos. Así podemos diseñar y probar niveles mucho más rápido.</p>
-          <img src="img/galeria/prologo.png" alt="Vista completa del nivel del prólogo" loading="lazy">
-        </div>
+        <span class="badge" style="margin-bottom: 1rem;">Entrada #03</span>
+        <h3 style="margin-bottom: 0.8rem; color: var(--primary);">Niveles generados por código</h3>
+        <p style="color: var(--text-muted);">Cada nivel se describe como un mapa de texto y Unity lo construye solo: suelo, plataformas, puntos de control, salida y diálogos. Así podemos diseñar y probar niveles mucho más rápido[cite: 1].</p>
       </article>
 
       <article class="card devlog-entry">
-        <span class="tag">Entrada #02</span>
-        <div>
-          <h3>Diálogos entre Nil y Volt</h3>
-          <p>Escribimos el guion completo del prólogo y el primer capítulo, con un sistema de diálogos propio que muestra el nombre de quien habla y el texto letra a letra.</p>
-        </div>
+        <span class="badge" style="margin-bottom: 1rem;">Entrada #02</span>
+        <h3 style="margin-bottom: 0.8rem; color: var(--primary);">Diálogos entre Nil y Volt</h3>
+        <p style="color: var(--text-muted);">Escribimos el guion completo del prólogo y el primer capítulo, con un sistema de diálogos propio que muestra el nombre de quien habla y el texto letra a letra[cite: 1].</p>
       </article>
 
       <article class="card devlog-entry">
-        <span class="tag">Entrada #01</span>
-        <div>
-          <h3>Tileset de 32 px y paleta del juego</h3>
-          <p>Creamos el tileset del bosque y de las cuevas con la misma paleta de colores de nuestra presentación, para que todo el juego tenga una identidad propia.</p>
-          <img src="img/galeria/tiles.png" alt="Tiles del bosque y de las cuevas" loading="lazy">
-        </div>
+        <span class="badge" style="margin-bottom: 1rem;">Entrada #01</span>
+        <h3 style="margin-bottom: 0.8rem; color: var(--primary);">Tileset de 32 px y paleta del juego</h3>
+        <p style="color: var(--text-muted);">Creamos el tileset del bosque y de las cuevas con la misma paleta de colores de nuestra presentación, para que todo el juego tenga una identidad propia[cite: 1].</p>
       </article>
     </div>
 
@@ -121,23 +109,23 @@
     <div class="footer-content">
       <div class="footer-top">
         <div class="footer-brand">
-          <img src="estudio/logo-estudio.png" alt="PC Pixel Studio" width="66" height="56">
+          <img src="estudio/LOGOTIP-ESTUDIO.png" alt="PC Pixel Studio" width="66" height="56">
           <p>Estudio indie de Girona. Hacemos juegos en pixel art con mucho cariño y algo de café.</p>
         </div>
         <div class="footer-col">
           <h4>Síguenos</h4>
           <nav class="footer-icons" aria-label="Redes sociales">
-            <a href="https://pabloabaad25.itch.io/entre-dos-mundos" target="_blank" rel="noopener noreferrer" aria-label="Entre Dos Mons en itch.io"><img src="iconos/icon-aviable-itchio.svg" alt=""></a>
-            <a href="https://www.instagram.com/pcpixelstudio_oficial/" target="_blank" rel="noopener noreferrer" aria-label="PC Pixel Studio en Instagram"><img src="iconos/icon-instagram.png" alt=""></a>
-            <a href="https://github.com/CyrailJR11/Projecte-Intermodular-de-Desenvolupament-d-Aplicacions-Multiplataforma" target="_blank" rel="noopener noreferrer" aria-label="Código del juego en GitHub"><img src="iconos/icon-github.png" alt=""></a>
+            <a href="https://pabloabaad25.itch.io/entre-dos-mundos" target="_blank" rel="noopener noreferrer" aria-label="Itch.io"><img src="iconos/icon-aviable-itchio.svg" alt=""></a>
+            <a href="https://www.instagram.com/pcpixelstudio_oficial/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="iconos/icon-instagram.png" alt=""></a>
+            <a href="https://github.com/CyrailJR11/Projecte-Intermodular-de-Desenvolupament-d-Aplicacions-Multiplataforma" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><img src="iconos/icon-github.png" alt=""></a>
           </nav>
         </div>
         <div class="footer-col">
           <h4>Hecho con</h4>
           <div class="footer-icons">
-            <a href="https://unity.com" target="_blank" rel="noopener noreferrer" aria-label="Unity 6"><img src="iconos/icon-unity.png" alt=""></a>
+            <a href="https://unity.com" target="_blank" rel="noopener noreferrer" aria-label="Unity"><img src="iconos/icon-unity.png" alt=""></a>
             <a href="https://visualstudio.microsoft.com" target="_blank" rel="noopener noreferrer" aria-label="Visual Studio"><img src="iconos/icon-vstudio.png" alt=""></a>
-            <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" aria-label="Visual Studio Code"><img src="iconos/icon-vscode.png" alt=""></a>
+            <a href="https://code.visualstudio.com" target="_blank" rel="noopener noreferrer" aria-label="VS Code"><img src="iconos/icon-vscode.png" alt=""></a>
           </div>
         </div>
       </div>
